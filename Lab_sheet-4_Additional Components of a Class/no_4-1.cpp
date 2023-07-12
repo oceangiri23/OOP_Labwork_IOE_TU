@@ -37,13 +37,18 @@ public:
 
     void twelveHrFormat()
     {
+        if (_hr > 24)
+        {
+            _hr = _hr - 24;
+        };
+
         cout << "Time in 12-hour format: "
              << setfill('0') << setw(2) << (_hr > 12 ? _hr - 12 : _hr) << ":"
              << setfill('0') << setw(2) << _minute << ":"
              << setfill('0') << setw(2) << _sec << " PM" << '\n';
     }
 
-    void twentyHrFormat()
+    void twentyFourHrFormat()
     {
         cout << "Time in 24-hour format: "
              << setfill('0') << setw(2) << (_hr > 24 ? _hr - 24 : _hr) << ":"
@@ -55,12 +60,12 @@ public:
 int main()
 {
     Time t1(12, 59, 58);
-    Time t2(12, 5, 6);
+    Time t2(10, 5, 6);
 
     Time t3 = t1.addTime(t2);
 
     t3.twelveHrFormat();
-    t3.twentyHrFormat();
+    t3.twentyFourHrFormat();
 
     return 0;
 }

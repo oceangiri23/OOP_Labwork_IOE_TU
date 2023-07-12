@@ -53,8 +53,7 @@ public:
         cout << "The area be: " << 0.5 * (length * height) << endl;
     }
 };
-
-int main()
+5 int main()
 {
     circle c;
     rectangle r;

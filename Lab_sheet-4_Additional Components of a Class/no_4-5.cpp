@@ -18,13 +18,13 @@ private:
 public:
     Rect(float l, float b) : _length{l}, _breadth{b} {}
 
-    // Non-const function
+    // Non-const fucn
     void increaseLength(float incr)
     {
         _length += incr;
     }
 
-    // Const function
+    // Const fncn
     float getArea() const
     {
         return _length * _breadth;

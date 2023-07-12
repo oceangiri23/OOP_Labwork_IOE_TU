@@ -5,6 +5,7 @@ each object created from the class. That is, the first object created will
  separate program that demonstrates the use of static member function.*/
 
 #include <iostream>
+using namespace std;
 
 class Item
 {
@@ -42,9 +43,9 @@ int main()
 {
     Item i1, i2, i3;
 
-    std::cout << "Item 1 no.: " << i1.getItemNumber() << '\n';
-    std::cout << "Item 2 no.: " << i2.getItemNumber() << '\n';
-    std::cout << "Item 3 no.: " << i3.getItemNumber();
+    cout << "Item 1 no.: " << i1.getItemNumber() << '\n';
+    cout << "Item 2 no.: " << i2.getItemNumber() << '\n';
+    cout << "Item 3 no.: " << i3.getItemNumber();
 
     return 0;
 }
